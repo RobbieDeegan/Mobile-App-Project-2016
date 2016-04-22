@@ -1,0 +1,18 @@
+<ion-view view-title="Add Task">
+  <ion-content class="padding"> <!-- Padding adds lines and spacing between buttons and labels in the view -->
+  
+      <!-- All comments apply for every label and button below -->
+      <!-- Code below sets up a label that allows information(text or numbers) to be inserted in to the field -->
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Enter New Task</span>
+          <!-- Input code below takes in value inserted into label and sets it to a value using ng-model -->
+          <!-- Any text between the button tags, the "Add Button" in this case, will be displayed on the button -->
+        <input type="text" ng-model="data.newTask" placeholder="Enter a task here">
+      </label>
+      
+      <!-- Button code sets up a button, including design properties, and when clicked uses ng-click to send value entered into label to a function else where -->
+      <button class="button button-full button-positive" ng-click="addTask()">
+        Add Task
+      </button>
+  </ion-content>
+</ion-view>
