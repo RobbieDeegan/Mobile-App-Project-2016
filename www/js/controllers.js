@@ -19,7 +19,7 @@ angular.module('starter.controllers', [])
   $scope.data = Task.data;
 })
 
-.controller('SaveController', function($scope, Task)
+.controller('SaveCtrl', function($scope, Task) // take in task and save to local storage on device
 {
     $scope.saveTask = function(v){
         window.localStorage.setItem('data', v);
