@@ -18,4 +18,11 @@ angular.module('starter.controllers', [])
 .controller('ListCtrl', function($scope, Task) {
   $scope.data = Task.data;
 })
+
+localtut.controller('localTutController', function($scope, Task)
+{
+    $scope.savedata = function(v){
+        window.localStorage.setItem('data', v);
+    }
+});
         
