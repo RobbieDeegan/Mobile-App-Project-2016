@@ -19,9 +19,9 @@ angular.module('starter.controllers', [])
   $scope.data = Task.data;
 })
 
-localtut.controller('localTutController', function($scope, Task)
+.controller('SaveController', function($scope, Task)
 {
-    $scope.savedata = function(v){
+    $scope.saveTask = function(v){
         window.localStorage.setItem('data', v);
     }
 });

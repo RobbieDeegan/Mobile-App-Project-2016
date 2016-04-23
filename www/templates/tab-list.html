@@ -1,11 +1,10 @@
 <ion-view view-title="To Do List">
-    <!--// All ionic code will go in between the ion-content tags-->
-
     <ion-content class = "padding">
     <ion-list>
       <ion-item ng-repeat="task in data.tasks"> <!--// Goes through the data variables in tasks-->
         <h1>{{ task.title }}</h1> <!-- prints to screen as it loops through -->
-          <h3>{{ task.added | date: 'dd-MM-yyyy HH:mm' }}</h3>
+          <h3>{{ task.added | date: 'dd-MM-yyyy HH:mm' }}</h3> <!-- Print the tasks that have 
+                                                                been added aswell as the date it was added-->
       </ion-item>
     </ion-list>
    
